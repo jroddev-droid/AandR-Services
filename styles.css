@@ -1,0 +1,206 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Comme', sans-serif;
+}
+
+.nav-list {
+    background-color: #fffffe; 
+    color: #0f0e17;
+    font-weight: bolder;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding-block: 2rem;
+    gap: 6rem;
+    margin: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    position: relative;
+    color: #0f0e17;
+}
+
+.nav-list li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #0f0e17;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+  
+.nav-list li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* Styling for homepage */
+.homepage-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #fffffe;
+    font-size: 1.7rem;
+    padding-top: 7em;
+    padding-bottom: 2em;
+    padding-inline: 8em;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter:brightness(0.7)
+  }
+
+/* Styling for Button */
+.btn-5 {
+    border: 0 solid;
+    padding-inline: 2.5rem;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, .5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+} 
+  
+.btn-5:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388; 
+}
+
+  /* Our Services styling page */
+
+h1 {
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background-color: #242629;
+    color: #fffffe;
+    padding-block: 1em;
+}
+
+.services-caption {
+    font-size: 1rem;
+    text-align: center;
+    padding-inline: 17rem;
+    margin-bottom: 0;
+    line-height: 1.5rem;
+}
+
+/* Styling for image Carousel */
+
+.image-carousel-section {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.image-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  font-family: 'DM Sans', sans-serif;
+  background-color: #fffffe;
+}
+
+input[type=radio] {
+    display: none;
+  }
+  
+.card {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform .4s ease;
+    cursor: pointer;
+}
+  
+.container {
+    width: 100%;
+    max-width: 800px;
+    max-height: 600px;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+  
+img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+  
+#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+    transform: translatex(-40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+  
+#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+    transform: translatex(40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+  
+#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+    
+}
+  
+  
+#item-2:checked ~ .player #test {
+    transform: translateY(0);
+}
+  
+#item-2:checked ~ .player #test  {
+    transform: translateY(-40px);
+}
+  
+#item-3:checked ~ .player #test  {
+    transform: translateY(-80px);
+}
+
+
+.commercial-cleaning-header {
+    background-color: #242629;
+    color: #fffffe;
+    text-align: center;
+    padding-block: 1em;
+    margin-top: 20rem;  
+} 
+
