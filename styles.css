@@ -74,26 +74,6 @@ video {
     filter:brightness(0.7)
   }
 
-/* Styling for Button */
-.btn-5 {
-    border: 0 solid;
-    padding-inline: 2.5rem;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-    outline: 1px solid;
-    outline-color: rgba(255, 255, 255, .5);
-    outline-offset: 0px;
-    text-shadow: none;
-    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-} 
-  
-.btn-5:hover {
-    border: 1px solid;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
-    outline-color: rgba(255, 255, 255, 0);
-    outline-offset: 15px;
-    text-shadow: 1px 1px 2px #427388; 
-}
-
   /* Our Services styling page */
 
 h1 {
@@ -216,9 +196,8 @@ img {
 
 .commercial-cleaning-section {
   display: flex;
-  border: 1px solid blue;
   justify-content: space-evenly;
-  gap: 6rem;
+  gap: 5rem;
 }
 
 .cleaining-service-card {
@@ -234,110 +213,46 @@ img {
   color: #fffffe;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.our-partners-header {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background-color: #16161a;
+    color: #fffffe;
+    padding-block: 1em;
+}
 
 /* Styling for Our Partners Section */
 
-/* .slider {
-    background: white;
-    height: 250px;
+.slider {
+    width: 75vw;
+    height: auto;
     margin: auto;
     overflow: hidden;
-    position: relative;
-    width: 1140px;
-}
-
-.slider::before, .slider::after {
-    background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
-    content: "";
-    height: 100%;
-    position: absolute;
-    width: 100px;
-    z-index: 2;
-}
-
-.slider::after {
-    right: 0;
-    top: 0;
-    -webkit-transform: rotateZ(180deg);
-    transform: rotateZ(180deg);
-}
-
-.slider::before {
-    left: 0;
-    top: 0;
 }
 
 .slider .slide-track {
-    animation: scroll 80s linear infinite;
     display: flex;
-    width: calc(250px * 18);
-
-}
-
-.slider .slide-track:hover {
-    animation-play-state: paused;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite; /* for older browsers that do not support new HTML5 & CSS3 */
+    width: calc(150px * 14);
 }
 
 .slider .slide {
-    height: 250px;
-    width: 250px;
+    width: 150px;
 }
 
-
-.slide:nth-child(1), .slide:nth-child(10) {
-    background-color: yellow;
-}
-
-.slide:nth-child(2), .slide:nth-child(11) {
-    background-color: coral;
-}
-
-.slide:nth-child(3), .slide:nth-child(12) {
-    background-color: blue;
-}
-
-.slide:nth-child(4), .slide:nth-child(13) {
-    background-color: red;
-}
-
-.slide:nth-child(5), .slide:nth-child(14) {
-    background-color: orange;
-}
-
-.slide:nth-child(6), .slide:nth-child(15) {
-    background-color: purple;
-}
-
-.slide:nth-child(7), .slide:nth-child(16) {
-    background-color: pink;
-}
-
-.slide:nth-child(8), .slide:nth-child(17) {
-    background-color: navy;
-}
-
-.slide:nth-child(9), .slide:nth-child(18) {
-    background-color: lime;
+.slider .slide img {
+    width: 150;
 }
 
 @keyframes scroll {
     0% {
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translate(0);
     }
     100% {
-        transform: translateX(calc(-250px * 9));
+        -webkit-transform: translateX(calc(-150px * 7));
+        transform: translate(calc(-150px * 7));
     }
-} */
+}
