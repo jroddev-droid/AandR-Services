@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-        <nav>
+        <nav class="sticky-nav">
             <ul class="nav-list">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#contact-us">CONTACT US</a></li>
             </ul>
         </nav>
         <section class="homepage-section">
@@ -57,53 +57,37 @@
             </div>
         </section>
         
-        <h1 class="commercial-cleaning-header">Commercial Cleaning</h1>
+        <h1 class="commercial-cleaning-header" id="services">Commercial Cleaning</h1>
         
-        <!-- Commmercial cleaining Section with card carousel-->
-        <div class="slider">
-          <input type="radio" name="toggle" id="btn-1" checked>
-          <input type="radio" name="toggle" id="btn-2">
-          <input type="radio" name="toggle" id="btn-3">
-        
-          <div class="slider-controls">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
+        <!-- Commmercial cleaining Section  -->
+        <section class="commercial-cleaning-section">
+          <div class="cleaining-service-card">
+            <img src="" alt="" width="200" height="300">
+            <h3 class="cleaining-card-title">Carpet Cleaning</h3>
+            <p class="cleaning-card-description">We use advanced equipment and techniques to remove dirt, stains, 
+              and odors from carpets in high-traffic areas, offices, and other commercial spaces. We offer flexible scheduling options to minimize disruptions to your business operations,
+               and we can tailor our services to meet your specific cleaning needs.</p>
           </div>
-        
-          <ul class="slides">
-            <li class="slide">
-              <div class="slide-content">
-                <h2 class="slide-title">Carpet Cleaning</h2>
-                <p class="slide-text">We use advanced equipment and techniques to remove dirt, stains, 
-                  and odors from carpets in high-traffic areas, offices, and other commercial spaces. We offer flexible scheduling options to minimize disruptions to your business operations,
-                   and we can tailor our services to meet your specific cleaning needs.</p>
-              </div>
-              <p class="slide-image">
-                <img src="https://placeimg.com/320/240/tech" alt="stuff" width="320" height="240">
-              </p>
-            </li>
-            <li class="slide">
-              <div class="slide-content">
-                <h2 class="slide-title">Office Cleaning</h2>
-                <p class="slide-text">Our team of trained professionals will ensure that all areas of your office are thoroughly cleaned, including workspaces, break rooms, bathrooms, and common areas.</p>
-              </div>
-              <p class="slide-image">
-                <img src="https://placeimg.com/320/240/animals" alt="stuff" width="320" height="240">
-              </p>
-            </li>
-            <li class="slide">
-              <div class="slide-content">
-                <h2 class="slide-title">Floor Stripping and Waxing</h2>
-                <p class="slide-text"> Floors can become dull, scratched, and discolored. We specialize in stripping away old wax and debris, deep clean the floors, and apply a fresh layer of high-quality wax.
-                  This process not only restores the shine and luster of your floors but also provides a protective barrier against dirt, stains, and wear and tear.</p>
-              </div>
-              <p class="slide-image">
-                <img src="https://placeimg.com/320/240/any" alt="stuff" width="320" height="240">
-              </p>
-            </li>
-          </ul>
-        </div>
+
+          <div class="cleaining-service-card">
+            <img src="" alt="" width="200" height="300">
+            <h3 class="cleaining-card-title">Office Cleaining</h3>
+            <p class="cleaning-card-description">Our team of trained professionals will ensure that all areas of your office are thoroughly cleaned, including workspaces, break rooms, bathrooms, and common areas.</p>
+          </div>
+
+          <div class="cleaining-service-card">
+            <img src="" alt="" width="200" height="300">
+            <h3 class="cleaining-card-title">Floor Stripping & Waxing</h3>
+            <p class="cleaning-card-description">Floors can become dull, scratched, and discolored. We specialize in stripping away old wax and debris, deep clean the floors, and apply a fresh layer of high-quality wax.
+              This process not only restores the shine and luster of your floors but also provides a protective barrier against dirt, stains, and wear and tear.</p>
+          </div>
+
+          <div class="cleaining-service-card">
+            <img src="" alt="" width="200" height="300">
+            <h3 class="cleaining-card-title">Commercial Painting</h3>
+            <p class="cleaning-card-description">Our range of services includes interior and exterior painting, wallcoverings, coatings, and decorative finishes. We also offer color consultations, surface preparation, priming, painting, staining, and sealing, as well as pressure washing and graffiti removal to ensure that surfaces are properly prepared before painting.</p>
+          </div>
+        </section>
 
         <!-- Our Partners Section -->
         <h1> Our Partners</h1>
