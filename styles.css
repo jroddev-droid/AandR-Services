@@ -85,7 +85,7 @@ h1 {
     padding-block: 1em;
 }
 
-.services-caption {
+.section-descriptions {
     font-size: 1rem;
     text-align: center;
     padding-inline: 17rem;
@@ -224,35 +224,40 @@ img {
 
 /* Styling for Our Partners Section */
 
-.slider {
-    width: 75vw;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
-}
+/* Media Queries */
 
-.slider .slide-track {
+  
+  @media screen and (max-width: 300px) {
+    .nav-list {
+        padding-block: 2rem;
+        gap: 2rem;
+        margin: 0;
+        font-size: 8pt;
+    }
+
+    .homepage-section {
+    position: relative;
     display: flex;
-    animation: scroll 40s linear infinite;
-    -webkit-animation: scroll 40s linear infinite; /* for older browsers that do not support new HTML5 & CSS3 */
-    width: calc(150px * 14);
-}
-
-.slider .slide {
-    width: 150px;
-}
-
-.slider .slide img {
-    width: 150;
-}
-
-@keyframes scroll {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translate(0);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1rem;
+    padding-top: 12em;
+    padding-bottom: 1em;
+    padding-inline: 0em;
+    font-weight: lighter;
     }
-    100% {
-        -webkit-transform: translateX(calc(-150px * 7));
-        transform: translate(calc(-150px * 7));
+    
+    video {
+    filter:brightness(0.4)
     }
-}
+
+    .section-descriptions {
+    font-size: 10pt;
+    padding-inline: 1rem;
+    margin-bottom: 0;
+    line-height: 2rem;
+    text-align: left;
+    }
+
+  }  
