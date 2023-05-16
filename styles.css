@@ -226,7 +226,7 @@ img {
 
 /* Media Queries */
 
-  
+  /* Targeting smartphones */
   @media screen and (max-width: 300px) {
     .nav-list {
         padding-block: 2rem;
@@ -249,7 +249,7 @@ img {
     }
     
     video {
-    filter:brightness(0.4)
+    filter:brightness(0.8)
     }
 
     .section-descriptions {
@@ -260,4 +260,16 @@ img {
     text-align: left;
     }
 
+    .commercial-cleaning-section {
+        display: block;
+    }
+
+    .cleaining-service-card {
+        border-radius: 0;
+        width: fit-content;
+    }
+    
+    .commercial-cleaning-section div {
+        margin-bottom: 1rem;
+    }
   }  
