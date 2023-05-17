@@ -318,22 +318,7 @@ img {
 	margin-top: 25px;
 }
 
-.footer-distributed .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #33383b;
-	border-radius: 2px;
 
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-
-	margin-right: 3px;
-	margin-bottom: 5px;
-}
 
 
 
@@ -384,5 +369,13 @@ img {
     
     .commercial-cleaning-section div {
         margin-bottom: 1rem;
+    }
+
+    .footer-distributed {
+        display: grid;
+    }
+
+    .footer-center {
+        display: block;
     }
   }  
