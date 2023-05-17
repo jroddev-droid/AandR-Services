@@ -224,6 +224,15 @@ img {
 
 /* Styling for Our Partners Section */
 
+.footer-section {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+
+
 /* Media Queries */
 
   /* Targeting smartphones */
