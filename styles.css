@@ -325,10 +325,10 @@ img {
 /* Media Queries */
 
   /* Targeting smartphones */
-  @media screen and (max-width: 300px) {
+  @media screen and (max-width: 375px) {
     .nav-list {
-        padding-block: 2rem;
-        gap: 2rem;
+        padding-right: 2rem;
+        gap: 4rem;
         margin: 0;
         font-size: 8pt;
     }
