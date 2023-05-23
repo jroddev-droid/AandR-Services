@@ -328,7 +328,7 @@ img {
   @media screen and (max-width: 375px) {
     .nav-list {
         padding-right: 2rem;
-        gap: 4rem;
+        gap: 6em;
         margin: 0;
         font-size: 8pt;
     }
