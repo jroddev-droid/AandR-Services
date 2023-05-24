@@ -292,6 +292,12 @@ img {
 	margin: 0;
 }
 
+#map {
+    width: 70%;
+    height: 300px;
+    border-radius: 20px;
+}
+
 
 .footer-distributed .footer-icons{
 	margin-top: 25px;
@@ -360,18 +366,20 @@ img {
         margin: 0;
         padding: 0;
         align-items: center;
-        border: 1px solid red;
     }
 
     .footer-left {
-        border: 1px solid green;
-        padding-inline: auto;
+        margin-top: 3rem;
     }
 
     .footer-center {
-        border: 1px solid yellow;
+        margin-top: 3rem;
     }
-    .footer-right {
-        border: 1px solid blue;
-    }
+
+    #map {
+        width: 80%;
+        height: 300px;
+        border-radius: 10px;
+        margin-block: 3rem;
+      }
   }  
