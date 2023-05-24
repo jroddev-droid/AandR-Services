@@ -243,23 +243,14 @@ img {
 	vertical-align: top;
 }
 
-/* Footer left */
-
-.footer-distributed .footer-left{
-	width: 40%;
-}
-
 /* The company logo */
 .company-logo-footer {
     width: 7rem; /* set the width to 300 pixels */
-    height: auto; /* allow the height to adjust proportionally */
+    height: auto; /* allows the height to adjust proportionally */
   }
 
-/* Footer Center */
 
-.footer-distributed .footer-center{
-	width: 35%;
-}
+  /* Footer Center */
 
 .footer-distributed .footer-center i{
 	background-color:  #0f0e17;
@@ -293,11 +284,6 @@ img {
 }
 
 /* Footer Right */
-
-.footer-distributed .footer-right{
-	width: 20%;
-}
-
 .footer-distributed .footer-company-about{
 	line-height: 20px;
 	color:  #92999f;
@@ -306,13 +292,6 @@ img {
 	margin: 0;
 }
 
-.footer-distributed .footer-company-about span{
-	display: block;
-	color:  #ffffff;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
 
 .footer-distributed .footer-icons{
 	margin-top: 25px;
@@ -376,10 +355,23 @@ img {
     }
 
     .footer-distributed {
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        border: 1px solid red;
+    }
+
+    .footer-left {
+        border: 1px solid green;
+        padding-inline: auto;
     }
 
     .footer-center {
-        display: block;
+        border: 1px solid yellow;
+    }
+    .footer-right {
+        border: 1px solid blue;
     }
   }  
