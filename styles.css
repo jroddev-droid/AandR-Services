@@ -268,7 +268,7 @@ img {
 .footer-distributed .footer-center {
 	font-size: 17px;
 	line-height: 38px;
-    margin-left: 6rem;
+    margin-left: 2rem;
 }
 
 .footer-distributed .footer-center p{
@@ -366,6 +366,7 @@ img {
 
     .footer-center {
         margin-top: 3rem;
+        margin-inline: 1rem;
     }
 
     #map {
@@ -373,5 +374,6 @@ img {
         height: 300px;
         border-radius: 10px;
         margin-block: 3rem;
+        margin-inline: 1rem;
       }
   }  
