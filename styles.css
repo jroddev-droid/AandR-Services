@@ -325,7 +325,7 @@ img {
 /* Media Queries */
 
   /* Targeting smartphones */
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 412px) {
     .nav-list {
         padding-right: 2rem;
         gap: 6em;
