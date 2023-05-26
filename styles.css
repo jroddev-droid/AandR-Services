@@ -89,7 +89,7 @@ h1 {
     font-size: 1rem;
     text-align: center;
     padding-inline: 17rem;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
     line-height: 1.5rem;
 }
 
@@ -197,7 +197,7 @@ img {
 .commercial-cleaning-section {
   display: flex;
   justify-content: space-evenly;
-  gap: 5rem;
+  flex-wrap: wrap;
 }
 
 .cleaining-service-card {
@@ -302,7 +302,7 @@ img {
 /* Media Queries */
 
   /* Targeting smartphones */
-  @media screen and (max-width: 412px) {
+  @media screen and (max-width: 500px) {
     .nav-list {
         padding-right: 2rem;
         gap: 6em;
@@ -360,6 +360,9 @@ img {
         align-items: center;
     }
 
+    .section-descriptions {
+        margin-bottom: 1rem;
+    }
     .footer-left {
         margin-top: 3rem;
     }
@@ -378,23 +381,28 @@ img {
       }
   }  
 
-  @media only screen 
-    and (min-device-width : 412px) 
-    and (max-device-width : 810px) {
+  @media screen and (min-width: 501px) and (max-width: 809px) {
     
+    .nav-list {
+        padding-right: 2rem;
+        gap: 5em;
+        margin: 0;
+        font-size: 12pt;
+    }
+
     .homepage-section {
         position: relative;
         display: flex;
         justify-content: center;
         text-align: center;
         align-items: center;
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding-top: 12em;
         padding-bottom: 1em;
-        padding-inline: 5em;
+        padding-inline: 0em;
         font-weight: lighter;
     }
-
+    
     video {
         filter:brightness(0.8)
     }
@@ -407,14 +415,19 @@ img {
         text-align: left;
     }
 
+    .commercial-cleaning-header {
+        margin-top: 18rem;
+    }
+
     .commercial-cleaning-section {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .cleaining-service-card {
         border-radius: 20px;
-        width: 55%;
-        margin: auto;
+        /* width: 60%; */
     }
     
     .commercial-cleaning-section div {
@@ -445,5 +458,66 @@ img {
         margin-block: 3rem;
         margin-inline: 1rem;
       }
-  }  
+  }
+  
+  
+  @media screen and (min-width : 810px) and (max-width: 1570px) {
+    
+    .homepage-section {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 1.5rem;
+        padding-top: 12em;
+        padding-bottom: 1em;
+        padding-inline: 5em;
+        font-weight: lighter;
+    }
 
+    video {
+        filter:brightness(0.8)
+    }
+
+    .section-descriptions {
+        font-size: 10pt;
+        padding-inline: 1rem;
+        margin-bottom: 0;
+        line-height: 2rem;
+        text-align: left;
+    }
+
+    .commercial-cleaning-section {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 45% 45%;
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    .footer-distributed {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .footer-left {
+        margin-top: 3rem;
+    }
+
+    .footer-center {
+        margin-top: 3rem;
+        margin-inline: 1rem;
+    }
+
+    #map {
+        width: 80%;
+        height: 300px;
+        border-radius: 10px;
+        margin-block: 3rem;
+        margin-inline: 1rem;
+      }
+  }
