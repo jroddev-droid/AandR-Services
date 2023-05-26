@@ -255,7 +255,7 @@ img {
 .footer-distributed .footer-center i{
 	background-color:  #0f0e17;
 	color: #fffffe;
-	font-size: 25px;
+	font-size: 23px;
 	width: 38px;
 	height: 38px;
 	border-radius: 50%;
@@ -311,33 +311,33 @@ img {
     }
 
     .homepage-section {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-size: 1rem;
-    padding-top: 12em;
-    padding-bottom: 1em;
-    padding-inline: 0em;
-    font-weight: lighter;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 1rem;
+        padding-top: 12em;
+        padding-bottom: 1em;
+        padding-inline: 0em;
+        font-weight: lighter;
     }
     
     video {
-    filter:brightness(0.8)
+        filter:brightness(0.8)
     }
 
     .section-descriptions {
-    font-size: 10pt;
-    padding-inline: 1rem;
-    margin-bottom: 0;
-    line-height: 2rem;
-    text-align: left;
+        font-size: 10pt;
+        padding-inline: 1rem;
+        margin-bottom: 0;
+        line-height: 2rem;
+        text-align: left;
     }
 
-.commercial-cleaning-header {
-    margin-top: 10rem;
-}
+    .commercial-cleaning-header {
+        margin-top: 10rem;
+    }
 
     .commercial-cleaning-section {
         display: block;
